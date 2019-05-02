@@ -1,14 +1,71 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.image__wrapper {
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 70px;
+	border-radius: 8px;
+	box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.4);
+}
+
+.image__wrapper::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.image__wrapper::before {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.03);
+	position: absolute;
+	filter: blur(35px);
+	animation: progress infinite 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+@keyframes progress {
+	from {
+		transform: translateX(-500px);
+	}
+
+	to {
+		transform: translateX(500px);
+	}
+}
+
+img.lazy {
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	border-radius: 8px;
+	object-fit: cover;
+	opacity: 0;
+	will-change: opacity;
+	transition: all 1s;
+}
+
+img.lazy.loaded {
+	opacity: 1;
+	filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.2));
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
