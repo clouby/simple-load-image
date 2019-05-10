@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/clouby/simple-load-image/static/css/main.0cd3b314.chunk.css",
+    "main.js": "/clouby/simple-load-image/static/js/main.cc9065dc.chunk.js",
+    "main.js.map": "/clouby/simple-load-image/static/js/main.cc9065dc.chunk.js.map",
+    "runtime~main.js": "/clouby/simple-load-image/static/js/runtime~main.06548d3f.js",
+    "runtime~main.js.map": "/clouby/simple-load-image/static/js/runtime~main.06548d3f.js.map",
+    "static/js/2.c527c3b1.chunk.js": "/clouby/simple-load-image/static/js/2.c527c3b1.chunk.js",
+    "static/js/2.c527c3b1.chunk.js.map": "/clouby/simple-load-image/static/js/2.c527c3b1.chunk.js.map",
+    "static/js/3.5638b22a.chunk.js": "/clouby/simple-load-image/static/js/3.5638b22a.chunk.js",
+    "static/js/3.5638b22a.chunk.js.map": "/clouby/simple-load-image/static/js/3.5638b22a.chunk.js.map",
+    "index.html": "/clouby/simple-load-image/index.html",
+    "precache-manifest.f665365ab409016cd38d6bb5244b1f3e.js": "/clouby/simple-load-image/precache-manifest.f665365ab409016cd38d6bb5244b1f3e.js",
+    "service-worker.js": "/clouby/simple-load-image/service-worker.js",
+    "static/css/main.0cd3b314.chunk.css.map": "/clouby/simple-load-image/static/css/main.0cd3b314.chunk.css.map",
+    "static/media/logo.svg": "/clouby/simple-load-image/static/media/logo.5d5d9eef.svg"
+  }
+}

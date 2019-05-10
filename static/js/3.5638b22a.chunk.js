@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{17:function(a,e,t){"use strict";t.r(e);var n=t(3),c=t(0),r=t.n(c);e.default=function(a){var e=a.srcImage,t=Object(c.useState)(!1),o=Object(n.a)(t,2),s=o[0],l=o[1];return r.a.createElement(r.a.Fragment,null,r.a.createElement("div",{className:"image__wrapper"},r.a.createElement("img",{src:e,className:"lazy ".concat(s&&"loaded"),onLoad:function(a){l(!s)},alt:"cat-random"})))}}}]);
+//# sourceMappingURL=3.5638b22a.chunk.js.map
