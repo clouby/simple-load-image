@@ -21,7 +21,7 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
-				<div>
+				<div className="wrapper">
 					<React.Suspense fallback={<div>loading...</div>}>
 						{cats.map(({ url }, index) => {
 							console.log(url);
@@ -29,9 +29,6 @@ function App() {
 						})}
 					</React.Suspense>
 				</div>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
 			</header>
 		</div>
 	);

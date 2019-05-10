@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
-const sleep = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
+import React, { useState } from 'react';
 
 function ImageLoad({ srcImage }) {
 	const [ loaded, setLoaded ] = useState(false);
