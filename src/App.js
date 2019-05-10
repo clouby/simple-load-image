@@ -24,7 +24,6 @@ function App() {
 				<div className="wrapper">
 					<React.Suspense fallback={<div>loading...</div>}>
 						{cats.map(({ url }, index) => {
-							console.log(url);
 							return <ImageLoad key={index} srcImage={url} />;
 						})}
 					</React.Suspense>
